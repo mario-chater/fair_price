@@ -180,3 +180,15 @@ main {
   font-weight: 400;
   color: #555;
 }
+
+a {
+  color: #66b2ff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(102, 178, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
