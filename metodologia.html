@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Metodologia FAIR-PRICE</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="index.html">FAIR-PRICE</a>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#categorias">Categorias</a></li>
+        <li><a href="index.html#analises">Análises</a></li>
+        <li><a href="metodologia.html">Metodologia</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <article class="article">
+
+    <h1>Metodologia FAIR-PRICE</h1>
+
+    <p class="article-intro">
+      Metodologia utilizada para estimar o preço de venda “justo” de produtos no Brasil,
+      com base em comparações internacionais, impostos e custos operacionais.
+    </p>
+
+    <section>
+      <p>
+        Neste artigo explicamos, com total transparência, a metodologia utilizada pelo
+        FAIR-PRICE para estimar o preço de venda “justo” de produtos no Brasil.
+        Esse preço corresponde a um valor que permitiria ao fabricante obter um lucro
+        semelhante ao praticado nos Estados Unidos, após levar em conta impostos,
+        custos e logística locais.
+      </p>
+
+      <p>
+        Antes de entrar nos detalhes dos cálculos, é importante esclarecer alguns pontos fundamentais.
+      </p>
+    </section>
+
+    <section>
+      <h2>Escopo e limitações da metodologia</h2>
+
+      <p>
+        O cálculo apresentado aqui é um exercício de aproximação do chamado “custo Brasil”.
+        Ele não constitui um cálculo tributário exato e não possui qualquer valor legal ou fiscal.
+      </p>
+
+      <p>
+        Justamente por isso, criamos uma área de comentários ao final desta página para receber
+        críticas, correções e recomendações de leitores, empresas analisadas e especialistas.
+        Nosso objetivo é ouvir, corrigir eventuais erros e aprimorar continuamente a metodologia.
+      </p>
+    </section>
+
+    <section>
+      <h2>Metodologia única para todos os produtos</h2>
+
+      <p>
+        Para permitir comparações consistentes entre produtos, utilizamos a mesma metodologia
+        de cálculo para todos eles, independentemente de serem 100% importados, parcialmente
+        produzidos no Brasil ou fabricados localmente.
+      </p>
+
+      <p>
+        Do ponto de vista do consumidor, o que realmente importa é a qualidade do produto
+        e o preço final pago.
+      </p>
+
+      <p>
+        Esta é a primeira versão da metodologia FAIR-PRICE. Nesta etapa inicial, não
+        diferenciamos categorias de produtos, embora seja sabido que determinadas categorias
+        enfrentam cargas tributárias mais altas devido a políticas públicas específicas.
+        Em versões futuras, pretendemos adaptar o cálculo por tipo de produto.
+      </p>
+
+      <p>
+        Por enquanto, utilizamos como referência preços oficiais ou de grandes varejistas
+        nos Estados Unidos, comparando-os com os preços praticados no Brasil.
+      </p>
+    </section>
+
+    <section>
+      <h2>Exemplo prático: iPhone 17 Pro (256 GB)</h2>
+
+      <p>
+        Nada melhor para explicar a metodologia do que um exemplo concreto.
+        O preço oficial do iPhone 17 Pro (256 GB) na loja oficial da Apple nos
+        Estados Unidos é de US$ 1.099.
+      </p>
+    </section>
+
+    <section>
+  <h2>Etapa 1 — Imposto de Importação (II) e conversão em reais</h2>
+
+  <p>
+    O Imposto de Importação (II) incide sobre o valor aduaneiro do produto,
+    acrescido de frete e seguro. A alíquota desse imposto depende da categoria
+    do produto e pode variar de 0% (como no caso de livros) até 35%.
+  </p>
+
+  <p>
+    Para este exercício, adotamos uma alíquota de 20%, ligeiramente acima da média,
+    de forma deliberadamente conservadora.
+  </p>
+
+  <p>
+    Um ponto fundamental — e frequentemente mal compreendido — é que o imposto
+    de importação <strong>não se aplica ao preço de venda do produto nos Estados Unidos</strong>.
+    Afinal, a Apple não compra o iPhone em uma loja em Nova Iorque para revendê-lo
+    em São Paulo.
+  </p>
+
+  <p>
+    O imposto de importação se aplica exclusivamente ao valor de fabricação do iPhone,
+    acrescido de frete e seguro. Estimativas independentes indicam que o custo de
+    fabricação do iPhone gira em torno de um terço do seu preço final.
+  </p>
+
+  <p>
+    Considerando frete e seguro, assumimos de forma conservadora que a base tributável
+    corresponde a aproximadamente 35% do preço final praticado nos Estados Unidos.
+    Esse percentual varia conforme o tipo de produto: para produtos tecnológicos
+    complexos e caros de fabricar, como o iPhone, ele tende a ser mais elevado;
+    para roupas e calçados, por exemplo, é significativamente menor.
+  </p>
+
+  <p>
+    Ainda assim, optamos por manter a hipótese de 35% para permanecer no lado
+    conservador da estimativa.
+  </p>
+
+  <p>
+    Por fim, esse valor é convertido em reais utilizando a taxa de câmbio considerada
+    no cálculo.
+  </p>
+
+  <pre class="math">
+Valor 1 = 1099 × 0,35 × 1,20 × 5,39 ≈ R$ 2.488
+  </pre>
+</section>
+
+
+    <section>
+      <h2>Etapa 2 — IPI e PIS/COFINS</h2>
+
+      <p>
+        Sobre esse valor incidem o IPI (aproximadamente 10%) e o PIS/COFINS
+        (aproximadamente 11,75%).
+      </p>
+
+      <pre class="math">
+Valor 2 = 2488 × 1,10 × 1,1175 ≈ R$ 3.058
+      </pre>
+    </section>
+
+<section>
+  <h2>Etapa 3 — Custos operacionais, não operacionais e margem de lucro</h2>
+
+  <p>
+    Neste ponto do cálculo, partimos de uma observação fundamental: estimamos que
+    apenas cerca de <strong>35% do preço final do iPhone</strong> corresponde aos custos
+    diretamente associados ao produto, tais como materiais, componentes, montagem
+    e frete internacional.
+  </p>
+
+  <p>
+    Os <strong>65% restantes</strong> do preço final cobrem um conjunto amplo de custos,
+    tanto operacionais quanto não operacionais, além da margem de lucro da empresa.
+    Entre esses custos estão incluídos:
+  </p>
+
+  <ul>
+    <li>logística de transporte e armazenamento dentro do país;</li>
+    <li>aluguéis de lojas físicas e centros de distribuição;</li>
+    <li>salários, benefícios e comissões de vendedores;</li>
+    <li>custos administrativos e operacionais da empresa;</li>
+    <li>custos de engenharia, pesquisa e desenvolvimento;</li>
+    <li>e, naturalmente, a margem de lucro.</li>
+  </ul>
+
+  <p>
+    No nosso modelo, assumimos que todos esses custos — bem como a margem de lucro —
+    têm <strong>a mesma ordem de grandeza no Brasil e nos Estados Unidos</strong>.
+    Em outras palavras, assumimos que a Apple busca obter, por produto vendido,
+    um nível de rentabilidade semelhante nos dois mercados.
+  </p>
+
+  <p>
+    Na prática, há fortes indícios de que os custos operacionais no Brasil possam
+    ser <strong>iguais ou até inferiores</strong> aos observados nos Estados Unidos,
+    pelos seguintes motivos:
+  </p>
+
+  <ul>
+    <li>
+      aluguéis comerciais no Brasil são, em geral, significativamente mais baratos
+      do que nos Estados Unidos;
+    </li>
+    <li>
+      salários no varejo e na logística são menores;
+    </li>
+    <li>
+      a infraestrutura nas regiões onde o iPhone efetivamente vende
+      (principalmente Sul e Sudeste) é adequada;
+    </li>
+    <li>
+      grandes centros urbanos, como São Paulo, contam com logística moderna —
+      prova disso é a entrega no mesmo dia oferecida por grandes varejistas.
+    </li>
+  </ul>
+
+  <p>
+    Diante desses fatores, assumir que os custos operacionais “além do produto”
+    no Brasil sejam muito superiores aos dos Estados Unidos não parece razoável.
+    Pelo contrário, a hipótese de custos de magnitude semelhante é, novamente,
+    uma escolha conservadora.
+  </p>
+
+  <p>
+    Com base nessas hipóteses, somamos ao valor obtido na etapa anterior
+    os 65% restantes do preço americano, convertidos em reais.
+  </p>
+
+  <pre class="math">
+Valor 3 = Valor 2 + (1 − 0,35) × 1099 × 5,39 ≈ R$ 6.909
+  </pre>
+</section>
+
+
+
+    <section>
+      <h2>Etapa 4 — ICMS e preço final</h2>
+
+      <p>
+        O ICMS é o único imposto que incide sobre o valor final ao consumidor.
+        Sua alíquota gira em torno de 18% e é calculado “por dentro”.
+      </p>
+
+      <pre class="math">
+Preço final = 6909 ÷ (1 − 0,18) ≈ R$ 8.425
+      </pre>
+    </section>
+
+    <section>
+      <h2>Resultado</h2>
+
+      <p class="highlight">
+        R$ 8.425<br />
+        <span>(cerca de 42% acima do preço praticado nos EUA)</span>
+      </p>
+    </section>
+<section>
+  <h2>Diferença entre o cálculo de imposto “por fora” e “por dentro”</h2>
+
+  <p>
+    Para compreender corretamente o impacto de determinados impostos sobre o preço
+    final de um produto no Brasil, é essencial distinguir entre dois métodos de
+    cálculo: o imposto calculado “por fora” e o imposto calculado “por dentro”.
+  </p>
+
+  <p>
+    O cálculo de imposto “por fora” é o mais intuitivo e o mais comum em diversos
+    países. Nesse modelo, o imposto é aplicado diretamente sobre o preço base do
+    produto, sendo somado a ele ao final.
+  </p>
+
+  <p>
+    Por exemplo, considere um produto com preço base de <strong>R$ 100</strong> e
+    uma alíquota de imposto de <strong>10%</strong>. Nesse caso:
+  </p>
+
+  <pre class="math">
+Preço base: 100
+Imposto (10%): 10
+Preço final: 110
+  </pre>
+
+  <p>
+    Nesse cenário, o imposto representa <strong>10 reais</strong> sobre um preço
+    final de <strong>110 reais</strong>, ou seja:
+  </p>
+
+  <pre class="math">
+10 / 110 ≈ 9%
+  </pre>
+
+  <p>
+    Em outras palavras, embora a alíquota nominal seja de 10%, a participação do
+    imposto no preço final do produto é de aproximadamente <strong>9%</strong>.
+  </p>
+
+  <p>
+    Já no cálculo de imposto “por dentro”, a lógica é diferente. Nesse modelo,
+    a alíquota de imposto incide de forma que o valor do imposto represente
+    exatamente o percentual anunciado do <strong>preço final</strong>.
+  </p>
+
+  <p>
+    Utilizando o mesmo exemplo — produto com preço base de <strong>R$ 100</strong>
+    e alíquota de <strong>10%</strong> — o cálculo “por dentro” funciona da seguinte forma:
+  </p>
+
+  <pre class="math">
+Preço final = 100 / (1 − 0,10) ≈ 111
+Imposto cobrado: 11
+  </pre>
+
+  <p>
+    Nesse caso, o imposto corresponde a <strong>11 reais</strong> sobre um preço
+    final de <strong>111 reais</strong>, confirmando que:
+  </p>
+
+  <pre class="math">
+11 / 111 ≈ 10%
+  </pre>
+
+  <p>
+    Ou seja, no cálculo “por dentro”, o imposto efetivamente representa o percentual
+    anunciado do preço final. Como consequência direta, o valor absoluto do imposto
+    cobrado é maior do que no cálculo “por fora”.
+  </p>
+
+  <p>
+    Essa diferença se torna muito mais significativa à medida que a alíquota aumenta.
+    Para ilustrar, considere agora uma alíquota de <strong>60%</strong>.
+  </p>
+
+  <p>
+    No cálculo “por fora”:
+  </p>
+
+  <pre class="math">
+Preço base: 100
+Preço final = 100 × 1,60 = 160
+Imposto cobrado: 60
+  </pre>
+
+  <p>
+    Já no cálculo “por dentro”:
+  </p>
+
+  <pre class="math">
+Preço final = 100 / (1 − 0,60) = 250
+Imposto cobrado: 150
+  </pre>
+
+  <p>
+    Nesse exemplo, o imposto cobrado no modelo “por dentro” é <strong>mais do que
+    o dobro</strong> do imposto cobrado no modelo “por fora”, apesar da alíquota
+    nominal ser exatamente a mesma.
+  </p>
+
+  <p>
+    Esse mecanismo explica por que impostos calculados “por dentro”, como o ICMS,
+    geram um impacto muito maior sobre o preço final do produto do que impostos
+    calculados “por fora”, especialmente quando as alíquotas são elevadas.
+  </p>
+</section>
+
+
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <p>FAIR-PRICE — Metodologia e transparência</p>
+</footer>
+
+</body>
+</html>
